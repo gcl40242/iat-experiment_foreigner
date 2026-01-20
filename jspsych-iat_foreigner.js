@@ -311,7 +311,7 @@ var appreciate_block = {
   type: 'html-keyboard-response',
   stimulus: 
   '<p>以上でテストは終了です！ありがとうございました。<br>'+
-  '続く質問にご回答ください。</p>',
+　'スペースキーを押して、続く質問にご回答ください。</p>',
   post_trial_gap: 1500
 };
 
