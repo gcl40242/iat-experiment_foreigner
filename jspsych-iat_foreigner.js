@@ -3,9 +3,9 @@ var welcome_block = {
   type: 'html-keyboard-response',
   stimulus: 
   '<p>潜在連合テスト(IAT)へようこそ。' +
-  'これからIATを受けていただきます。<br>'+
-  'IATとは、画面に表示される項目を、できるだけ素早く、適切なカテゴリーに分類するテストです。</p><p>'+
-  'いずれかのキーを押して進んでください。</p>',
+  'これからキーボード操作による判断課題を受けていただきます。<br>'+
+  '画面に提示される単語について、指示されたキーを押して、なるべく素早く分類してください。</p><p>'+
+  'スペースキーを押して進んでください。</p>',
   post_trial_gap: 1500
 };
 
@@ -14,7 +14,7 @@ var category_block = {
   type: 'html-keyboard-response',
   stimulus: 
   '<p>“eキー”と“iキー”を使用して、画面に表示される項目を、できるだけ素早く各カテゴリーに分類してください。<br>' +
-  '以下は、3つのカテゴリーと、各カテゴリーに属する項目です。:</p><br>' +
+  '以下は、3つのカテゴリーと、各カテゴリーに属する項目です。よく読んから、スペースキーを押して進んでください。:</p><br>' +
   '<strong>良い</strong>:<br>' + 
   '好感の持てる、格好の良い、素晴らしい、美しい<br><br>' + 
   '<strong>悪い</strong>:<br>' + 
@@ -30,11 +30,12 @@ var instructions_block1 = {
   stimulus: "<div style='position: absolute; top: 18%; left: 20%'><p>eキーを押す:<br><strong>悪い</strong></p></div>" +
   "<div style='position: absolute; top: 18%; right: 20%'><p>iキーを押す:<br><strong>良い</strong></p></div>" +
   "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'><br><br><p>"+
-  "悪いカテゴリーの項目が表示されたら、左手の指で<strong>eキー</strong>を、<br>" +
-  "良いカテゴリーの項目が表示されたら、右手の指で<strong>iキー</strong>を押してください。<br>"+
-  "項目は一度しか表示されません。</p><p>" + 
+  "悪いカテゴリーの単語が表示されたら、左手の指で<strong>eキー</strong>を、<br>" +
+  "良いカテゴリーの単語が表示されたら、右手の指で<strong>iキー</strong>を押してください。<br>"+
+  "単語は一度しか表示されません。</p><p>" + 
   "分類を間違えた場合、赤色でXマークが表示されます。正しいキーを押し直して、課題を続行してください。</p><p> " +
-  "準備ができたら、いずれかのキーを押して開始してください。</p></div>",
+  "次のページでは、課題の練習を行います。</p><p> " +
+  "準備ができたら、スペースキーを押して開始してください。</p></div>",
 };
 
 //4.練習試行
@@ -81,12 +82,12 @@ var instructions_block2 = {
   "<div style='position: absolute; top: 18%; right: 20%'>iキーを押す:<br>" +
   "<strong>良い</strong><br>" + "　　　<br>" + "<strong>　　</strong></div>" +
   "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'><br><br><br><br><br><p>"+
-  "悪いカテゴリー/外国人カテゴリーの項目が表示されたら<strong>eキー</strong>を、<br>" +
-  "良いカテゴリーの項目が表示されたら<strong>iキー</strong>を押してください。<br>" +
-  "どの項目も、ひとつのカテゴリーにのみ属しています。</p><p>" +
+  "悪いカテゴリー/外国人カテゴリーの単語が表示されたら<strong>eキー</strong>を、<br>" +
+  "良いカテゴリーの単語が表示されたら<strong>iキー</strong>を押してください。<br>" +
+  "どの単語も、ひとつのカテゴリーにのみ属しています。</p><p>" +
   "分類を間違えた場合、赤色でXマークが表示されます。正しいキーを押し直して、課題を続行してください。<br>" +
-  "できるだけ素早く、正確に回答してください。</p><p> " +
-  "準備ができたら、いずれかのキーを押して開始してください。</p><p></div>",
+  "次のページから、課題の本番が始まります。できるだけ素早く、正確に回答してください。</p><p> " +
+  "準備ができたら、スペースキーを押して開始してください。</p><p></div>",
 };
 
 //6.本番試行(悪い + 外国人 / 良い)
@@ -139,12 +140,12 @@ var instructions_block3 = {
   "<div style='position: absolute; top: 18%; right: 20%'>iキーを押す:<br>" +
   "<strong>良い</strong><br>" + "または<br>" + "<strong>外国人</strong></div>" +
   "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'><br><br><br><br><br><p>"+
-  "悪いカテゴリーの項目が表示されたら<strong>eキー</strong>を<br>" +
-  "良いカテゴリー/外国人カテゴリーの項目が表示されたら<strong>iキー</strong>を押してください。<br>" +
-  "どの項目も、ひとつのカテゴリーにのみ属しています。</p><p>" +
+  "悪いカテゴリーの単語が表示されたら<strong>eキー</strong>を<br>" +
+  "良いカテゴリー/外国人カテゴリーの単語が表示されたら<strong>iキー</strong>を押してください。<br>" +
+  "どの単語も、ひとつのカテゴリーにのみ属しています。</p><p>" +
   "分類を間違えた場合、赤色でXマークが表示されます。正しいキーを押し直して、課題を続行してください。<br>" +
   "できるだけ素早く、正確に回答してください。</p><p>" +
-  "準備ができたら、いずれかのキーを押して開始してください。</p></div>",
+  "準備ができたら、スペースキーを押して開始してください。</p></div>",
 };
 
 //8.本番試行(悪い / 良い + 外国人)
@@ -197,12 +198,12 @@ var instructions_block4 = {
   "<div style='position: absolute; top: 18%; right: 20%'>iキーを押す:<br>" +
   "<strong>悪い</strong><br>" + "　　　<br>" + "<strong>　　　</strong></div>" +
   "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'><br><br><br><br><br><p>"+
-  "良いカテゴリー/外国人カテゴリーの項目が表示されたら<strong>eキー</strong>を<br>" +
-  "悪いカテゴリーの項目が表示されたら<strong>iキー</strong>を押してください。<br>" +
-  "どの項目も、ひとつのカテゴリーにのみ属しています。</p><p>" +
+  "良いカテゴリー/外国人カテゴリーの単語が表示されたら<strong>eキー</strong>を<br>" +
+  "悪いカテゴリーの単語が表示されたら<strong>iキー</strong>を押してください。<br>" +
+  "どの単語も、ひとつのカテゴリーにのみ属しています。</p><p>" +
   "分類を間違えた場合、赤色でXマークが表示されます。正しいキーを押し直して、課題を続行してください。<br>" +
   "できるだけ素早く、正確に回答してください。</p><p>" +
-  "準備ができたら、いずれかのキーを押して開始してください。</p></div>",
+  "準備ができたら、スペースキーを押して開始してください。</p></div>",
 };
 
 //10.本番試行(良い + 外国人 / 悪い)
@@ -255,12 +256,12 @@ var instructions_block5 = {
   "<div style='position: absolute; top: 18%; right: 20%'>iキーを押す:<br>" +
   "<strong>悪い</strong><br>" + "または<br>" + "<strong>外国人</strong></div>" +
   "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'><br><br><br><br><br><p>"+
-  "良いカテゴリーの項目が表示されたら<strong>eキー</strong>を<br>" +
-  "悪いカテゴリー/外国人カテゴリーの項目が表示されたら<strong>iキー</strong>を押してください。<br>" +
-  "どの項目も、ひとつのカテゴリーにのみ属しています。</p><p>" +
+  "良いカテゴリーの単語が表示されたら<strong>eキー</strong>を<br>" +
+  "悪いカテゴリー/外国人カテゴリーの単語が表示されたら<strong>iキー</strong>を押してください。<br>" +
+  "どの単語も、ひとつのカテゴリーにのみ属しています。</p><p>" +
   "分類を間違えた場合、赤色でXマークが表示されます。正しいキーを押し直して、課題を続行してください。<br>" +
   "できるだけ素早く、正確に回答してください。</p><p>" +
-  "準備ができたら、いずれかのキーを押して開始してください。</p><p></div>",
+  "準備ができたら、スペースキーを押して開始してください。</p><p></div>",
 };
 
 //12.本番試行(良い / 悪い + 外国人)
