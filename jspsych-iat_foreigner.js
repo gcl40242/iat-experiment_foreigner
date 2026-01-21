@@ -195,7 +195,7 @@ var instructions_block4 = {
   type: 'html-keyboard-response',
   stimulus: 
   "<div style='position: absolute; top: 18%; left: 20%'>eキーを押す:<br> " +
-  "<strong>良い</strong><br>" + "または<br>" + "<strong>障害者</strong></div>" + 
+  "<strong>良い</strong><br>" + "または<br>" + "<strong>外国人</strong></div>" + 
   "<div style='position: absolute; top: 18%; right: 20%'>iキーを押す:<br>" +
   "<strong>悪い</strong><br>" + "　　　<br>" + "<strong>　　　</strong></div>" +
   "<div style='position: relative; top: 42%; margin-left: auto; margin-right: auto'><br><br><br><br><br><p>"+
