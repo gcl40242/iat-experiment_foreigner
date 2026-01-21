@@ -190,7 +190,7 @@ var trial_block3 = {
   repetitions: 1
 };
 
-//9.本番試行の教示文(良い + 障害者 / 悪い)
+//9.本番試行の教示文(良い + 外国人 / 悪い)
 var instructions_block4 = {
   type: 'html-keyboard-response',
   stimulus: 
@@ -248,7 +248,7 @@ var trial_block4 = {
   repetitions: 1
 };
 
-//11.本番試行の教示文(良い / 悪い + 障害者)
+//11.本番試行の教示文(良い / 悪い + 外国人)
 var instructions_block5 = {
   type: 'html-keyboard-response',
   stimulus: 
